@@ -23,4 +23,6 @@ class Bottles
       VERSE
     end
   end
+  def verses(_,_)
+  end
 end
