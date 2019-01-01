@@ -31,7 +31,7 @@ class Bottles
       'bottles'
     end
   end
-  def pronoun
+  def pronoun(number=:FIXME)
       'one'
   end
 end
