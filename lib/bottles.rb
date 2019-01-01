@@ -38,7 +38,7 @@ class Bottles
         'one'
       end
   end
-  def quantity
+  def quantity(number=:ZERO)
     'no more'
   end
 end
