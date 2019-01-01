@@ -38,4 +38,6 @@ class Bottles
         'one'
       end
   end
+  def quantity
+  end
 end
