@@ -31,4 +31,6 @@ class Bottles
       'bottles'
     end
   end
+  def pronoun
+  end
 end
