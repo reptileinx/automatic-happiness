@@ -39,5 +39,6 @@ class Bottles
       end
   end
   def quantity
+    'no more'
   end
 end
