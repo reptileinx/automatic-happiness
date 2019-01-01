@@ -29,4 +29,6 @@ class Bottles
   def song
     verses(99,0)
   end
+  def container
+  end
 end
