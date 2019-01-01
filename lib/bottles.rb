@@ -25,12 +25,7 @@ class Bottles
   end
   def verses(startpoint, endpoint)
     startpoint.downto(endpoint).collect {|i| verse(i)}.join("\n")
-    # <<~VERSES
-    #   99 bottles of beer on the wall, 99 bottles of beer.
-    #   Take one down and pass it around, 98 bottles of beer on the wall.
-    #
-    #   98 bottles of beer on the wall, 98 bottles of beer.
-    #   Take one down and pass it around, 97 bottles of beer on the wall.
-    # VERSES
+  end
+  def song
   end
 end
