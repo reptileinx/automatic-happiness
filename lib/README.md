@@ -1,6 +1,7 @@
 # Tracking Smells
-
+```bash
 lib/bottles.rb -- 4 warnings:
+
   [17, 22]:DuplicateMethodCall: Bottles#verse calls 'number - 1' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
   [1]:IrresponsibleModule: Bottles has no descriptive comment [https://github.com/troessner/reek/blob/v5.2.0/docs/Irresponsible-Module.md]
   [27]:UncommunicativeVariableName: Bottles#verses has the variable name 'i' [https://github.com/troessner/reek/blob/v5.2.0/docs/Uncommunicative-Variable-Name.md]
@@ -13,3 +14,4 @@ mpar@reptileinxs-iMac:~/dev/99bottles|master
      5.6: Bottles#verse                    lib/bottles.rb:2-21
      5.0: Bottles#verses                   lib/bottles.rb:26-27
 mpar@reptileinxs-iMac:~/dev/99bottles|master
+```
