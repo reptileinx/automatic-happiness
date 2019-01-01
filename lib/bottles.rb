@@ -27,5 +27,6 @@ class Bottles
     startpoint.downto(endpoint).collect {|i| verse(i)}.join("\n")
   end
   def song
+    verses(99,0)
   end
 end
