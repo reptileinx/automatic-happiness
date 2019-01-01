@@ -21,9 +21,11 @@ class Bottles
   def verses(startpoint, endpoint)
     startpoint.downto(endpoint).collect {|i| verse(i)}.join("\n")
   end
+  
   def song
     verses(99,0)
   end
+
   def container(number=:FIXME)
     if number == 1
       'bottle'
@@ -31,6 +33,7 @@ class Bottles
       'bottles'
     end
   end
+
   def pronoun(number=:FIXME)
       if number == 1
         'it'
@@ -38,11 +41,12 @@ class Bottles
         'one'
       end
   end
+
   def quantity(number=0)
       if number == 0
         'no more'
       else
-        number  
+        number
       end
   end
 end
