@@ -11,11 +11,6 @@ class Bottles
         #{number} bottle of beer on the wall, #{number} bottle of beer.
         Take it down and pass it around, no more bottles of beer on the wall.
       VERSE
-    when 2
-      <<~VERSE
-        #{number} bottles of beer on the wall, #{number} bottles of beer.
-        Take one down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
-      VERSE
     else
       <<~VERSE
         #{number} bottles of beer on the wall, #{number} bottles of beer.
