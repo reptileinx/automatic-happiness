@@ -3,7 +3,7 @@ class Bottles
     case number
     when 0
       <<~VERSE
-        #{quantity(number).to_s.capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
+        #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
         Go to the store and buy some more, 99 bottles of beer on the wall.
       VERSE
     else
