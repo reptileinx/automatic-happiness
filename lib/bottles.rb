@@ -31,11 +31,11 @@ class Bottles
   end
 
   def successor(number)
-      BottleNumber.new(number).successor(number)
       if number == 0
         99
       else
         number - 1
       end
+      BottleNumber.new(number).successor(number)
   end
 end
