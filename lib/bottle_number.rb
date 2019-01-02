@@ -22,7 +22,7 @@ class BottleNumber
     end
   end
 
-  def quantity(_delete_me = nil)
+  def quantity
     if number == 0
       'no more'
     else
