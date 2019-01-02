@@ -44,4 +44,6 @@ class Bottles
         number.to_s
       end
   end
+  def action
+  end
 end
