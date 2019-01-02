@@ -52,7 +52,7 @@ class Bottles
     end
   end
 
-  def successor(number=0)
+  def successor(number)
       if number == 0
         99
       else
