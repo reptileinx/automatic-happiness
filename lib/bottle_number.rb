@@ -6,7 +6,7 @@ class BottleNumber
     @number = number
   end
 
-  def container(number)
+  def container(_delete_me = nil)
     if number == 1
       'bottle'
     else
