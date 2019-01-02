@@ -4,7 +4,7 @@ class Bottles
     when 0
       <<~VERSE
         #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-        #{action(number)}, 99 bottles of beer on the wall.
+        #{action(number)}, #{quantity(99)} #{container(number - 1)} of beer on the wall.
       VERSE
     else
       <<~VERSE
