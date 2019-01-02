@@ -4,7 +4,7 @@ class Bottles
     when 0
       <<~VERSE
         #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-        #{action}, 99 bottles of beer on the wall.
+        #{action(number)}, 99 bottles of beer on the wall.
       VERSE
     else
       <<~VERSE
@@ -48,7 +48,7 @@ class Bottles
     if number == 0
       'Go to the store and buy some more'
     else
-      "Take #{pronoun(number)} down and pass it around"    
+      "Take #{pronoun(number)} down and pass it around"
     end
   end
 end
