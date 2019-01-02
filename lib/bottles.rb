@@ -19,16 +19,16 @@ class Bottles
   end
 
   def pronoun(number)
-      BottleNumber.new(number).pronoun(number)
+    BottleNumber.new(number).pronoun(number)
   end
 
   def quantity(number)
-      BottleNumber.new(number).quantity(number)
       if number == 0
         'no more'
       else
         number.to_s
       end
+      BottleNumber.new(number).quantity(number)
   end
   def action(number)
     if number == 0
