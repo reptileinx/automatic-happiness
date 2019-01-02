@@ -51,6 +51,8 @@ class Bottles
       "Take #{pronoun(number)} down and pass it around"
     end
   end
+
   def successor
+    "99"
   end
 end
