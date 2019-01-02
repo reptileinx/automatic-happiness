@@ -1,17 +1,9 @@
 class Bottles
   def verse(number)
-    case number
-    when 0
-      <<~VERSE
-        #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-        #{action(number)}, #{quantity(successor(number))} #{container(number - 1)} of beer on the wall.
-      VERSE
-    else
-      <<~VERSE
+    <<~VERSE
         #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
         #{action(number)}, #{quantity(successor(number))} #{container(number -1)} of beer on the wall.
-      VERSE
-    end
+    VERSE
   end
   def verses(startpoint, endpoint)
     startpoint.downto(endpoint).collect {|i| verse(i)}.join("\n")
