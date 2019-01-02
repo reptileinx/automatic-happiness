@@ -2,7 +2,7 @@ class Bottles
   def verse(number)
     <<~VERSE
         #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-        #{action(number)}, #{quantity(successor(number))} #{container(number -1)} of beer on the wall.
+        #{action(number)}, #{quantity(successor(number))} #{container(successor(number))} of beer on the wall.
     VERSE
   end
   def verses(startpoint, endpoint)
