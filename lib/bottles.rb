@@ -45,5 +45,6 @@ class Bottles
       end
   end
   def action
+    'Go to the store and buy some more'
   end
 end
