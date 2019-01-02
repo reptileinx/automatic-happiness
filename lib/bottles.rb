@@ -52,7 +52,7 @@ class Bottles
     end
   end
 
-  def successor(number=:FIXME)
+  def successor(number=0)
     "99"
   end
 end
