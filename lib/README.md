@@ -72,3 +72,28 @@ commit: f322b0a68a3b333ee6659f2703b2f0203d1ed932
      5.0: Bottles#verses                   lib/bottles.rb:8-9
      2.9: Bottles#successor                lib/bottles.rb:47-51
 ```
+
+
+## lib/bottles.rb -- 10 warnings:
+```bash
+  [5, 5]:DuplicateMethodCall: Bottles#verse calls 'container(number)' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
+  [5, 5]:DuplicateMethodCall: Bottles#verse calls 'quantity(number)' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
+  [6, 6]:DuplicateMethodCall: Bottles#verse calls 'successor(number)' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
+  [2]:IrresponsibleModule: Bottles has no descriptive comment [https://github.com/troessner/reek/blob/v5.2.0/docs/Irresponsible-Module.md]
+  [10]:UncommunicativeVariableName: Bottles#verses has the variable name 'i' [https://github.com/troessner/reek/blob/v5.2.0/docs/Uncommunicative-Variable-Name.md]
+  [29]:UtilityFunction: Bottles#action doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+  [17]:UtilityFunction: Bottles#container doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+  [21]:UtilityFunction: Bottles#pronoun doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+  [25]:UtilityFunction: Bottles#quantity doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+  [33]:UtilityFunction: Bottles#successor doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+```
+
+## Flog results
+```bash
+     31.6: flog total
+     3.5: flog/method average
+
+    11.6: Bottles#verse                    lib/bottles.rb:3-5
+     5.5: Bottles#verses                   lib/bottles.rb:9-10
+     2.4: Bottles#successor                lib/bottles.rb:33-34
+```
