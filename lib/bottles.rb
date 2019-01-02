@@ -44,7 +44,7 @@ class Bottles
         number.to_s
       end
   end
-  def action(number=0)
+  def action(number)
     if number == 0
       'Go to the store and buy some more'
     else
