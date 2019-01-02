@@ -23,7 +23,7 @@ class Bottles
   end
 
   def quantity(number)
-    BottleNumber.new(number).quantity(number)
+    BottleNumber.new(number).quantity
   end
 
   def action(number)
