@@ -53,6 +53,10 @@ class Bottles
   end
 
   def successor(number=0)
-    "99"
+      if number == 0
+        99
+      else
+        number - 1
+      end
   end
 end
