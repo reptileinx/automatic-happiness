@@ -25,11 +25,13 @@ class Bottles
   def quantity(number)
     BottleNumber.new(number).quantity(number)
   end
+
   def action(number)
     BottleNumber.new(number).action(number)
   end
 
   def successor(number)
+      BottleNumber.new(number).successor(number)
       if number == 0
         99
       else
