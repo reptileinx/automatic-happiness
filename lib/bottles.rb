@@ -16,10 +16,6 @@ class Bottles
     verses(99,0)
   end
 
-  def quantity(number)
-    BottleNumber.new(number).quantity
-  end
-
   def action(number)
     BottleNumber.new(number).action
   end
