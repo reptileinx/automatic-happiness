@@ -15,8 +15,4 @@ class Bottles
   def song
     verses(99,0)
   end
-
-  def successor(number)
-    BottleNumber.new(number).successor
-  end
 end
