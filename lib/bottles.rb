@@ -16,10 +16,6 @@ class Bottles
     verses(99,0)
   end
 
-  def action(number)
-    BottleNumber.new(number).action
-  end
-
   def successor(number)
     BottleNumber.new(number).successor
   end
