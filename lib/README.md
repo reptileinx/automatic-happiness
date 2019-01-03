@@ -107,3 +107,30 @@ commit: f322b0a68a3b333ee6659f2703b2f0203d1ed932
      5.5: Bottles#verses                   lib/bottles.rb:9-10
      2.4: Bottles#successor                lib/bottles.rb:33-34
 ```
+
+---
+## flog lib/bottles.rb
+
+```bash
+    20.7: flog total
+     5.2: flog/method average
+
+    12.7: Bottles#verse                    
+    lib/bottles.rb:3-7
+
+```
+
+## reek lib/bottles.rb
+```bash
+
+Inspecting 1 file(s):
+S
+
+lib/bottles.rb -- 5 warnings:
+  [7, 7]:DuplicateMethodCall: Bottles#verse calls 'bottle_number.container' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
+  [7, 7]:DuplicateMethodCall: Bottles#verse calls 'bottle_number.quantity' 2 times [https://github.com/troessner/reek/blob/v5.2.0/docs/Duplicate-Method-Call.md]
+  [2]:IrresponsibleModule: Bottles has no descriptive comment [https://github.com/troessner/reek/blob/v5.2.0/docs/Irresponsible-Module.md]
+  [12]:UncommunicativeVariableName: Bottles#verses has the variable name 'i' [https://github.com/troessner/reek/blob/v5.2.0/docs/Uncommunicative-Variable-Name.md]
+  [3]:UtilityFunction: Bottles#verse doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+
+```
