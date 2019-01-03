@@ -16,11 +16,6 @@ class Bottles
     verses(99,0)
   end
 
-
-  def pronoun(number)
-    BottleNumber.new(number).pronoun
-  end
-
   def quantity(number)
     BottleNumber.new(number).quantity
   end
