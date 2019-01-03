@@ -4,7 +4,7 @@ class Bottles
       bottle_number = BottleNumber.new(number)
     <<~VERSE
         #{bottle_number.quantity.capitalize} #{container(number)} of beer on the wall, #{bottle_number.quantity} #{container(number)} of beer.
-        #{bottle_number.action}, #{quantity(successor(number))} #{container(bottle_number.successor)} of beer on the wall.
+        #{bottle_number.action}, #{quantity(bottle_number.successor)} #{container(bottle_number.successor)} of beer on the wall.
     VERSE
   end
   def verses(startpoint, endpoint)
