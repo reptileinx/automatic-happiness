@@ -38,7 +38,7 @@ class BottleNumber
     end
   end
 
-  def successor(_delete_me = nil)
+  def successor
     if number == 0
       99
     else
