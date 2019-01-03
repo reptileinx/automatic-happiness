@@ -3,7 +3,7 @@ class Bottles
   def verse(number)
       bottle_number = BottleNumber.new(number)
     <<~VERSE
-        #{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
+        #{bottle_number.quantity.capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
         #{bottle_number.action}, #{quantity(successor(number))} #{container(successor(number))} of beer on the wall.
     VERSE
   end
