@@ -17,4 +17,12 @@ class Bottles
   def song
     verses(99,0)
   end
+  
+  def bottle_number_for(number)
+    if number == 0
+      BottleNumber0.new(number)
+    else
+      BottleNumber.new(number)
+    end
+   end
 end
