@@ -1,6 +1,8 @@
 require_relative '../lib/bottle_number'
+require_relative '../lib/bottle_number_0'
 class Bottles
   def verse(number)
+    bottle_number_0    = BottleNumber0.new
     bottle_number      = BottleNumber.new(number)
     next_bottle_number = BottleNumber.new(bottle_number.successor)
     <<~VERSE
