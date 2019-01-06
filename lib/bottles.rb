@@ -2,7 +2,6 @@ require_relative '../lib/bottle_number'
 require_relative '../lib/bottle_number_0'
 class Bottles
   def verse(number)
-    bottle_number_0    = BottleNumber0.new
     bottle_number      = BottleNumber.new(number)
     next_bottle_number = BottleNumber.new(bottle_number.successor)
     <<~VERSE
@@ -17,7 +16,7 @@ class Bottles
   def song
     verses(99,0)
   end
-  
+
   def bottle_number_for(number)
     if number == 0
       BottleNumber0.new(number)
