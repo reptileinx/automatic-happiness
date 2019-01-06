@@ -2,8 +2,8 @@ require_relative '../lib/bottle_number'
 require_relative '../lib/bottle_number_0'
 class Bottles
   def verse(number)
-    bottle_number      = BottleNumber.new(number)
-    next_bottle_number = BottleNumber.new(bottle_number.successor)
+    bottle_number      = bottle_number_for(number)
+    next_bottle_number = bottle_number_for(bottle_number.successor)
     <<~VERSE
         #{bottle_number.quantity.capitalize} #{bottle_number.container} of beer on the wall, #{bottle_number.quantity} #{bottle_number.container} of beer.
         #{bottle_number.action}, #{next_bottle_number.quantity} #{next_bottle_number.container} of beer on the wall.
