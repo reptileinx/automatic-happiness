@@ -1,3 +1,4 @@
+# When BottleNumber is equal to 0
 class BottleNumber0 < BottleNumber
   def quantity
     'no more'

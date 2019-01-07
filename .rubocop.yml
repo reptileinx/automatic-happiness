@@ -1,0 +1,4 @@
+AllCops:
+  Exclude:
+    - "test/*"
+  TargetRubyVersion: 2.3
