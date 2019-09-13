@@ -1,6 +1,7 @@
 require_relative '../lib/bottle_number'
 require_relative '../lib/bottle_number_0'
 require_relative '../lib/bottle_number_1'
+
 # the subject of the 99 bottles song
 class Bottles
   def verse(number)

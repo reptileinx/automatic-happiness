@@ -1,4 +1,4 @@
-# removes obssession on zero
+# removes obssession on integer zero
 class BottleNumber0 < BottleNumber
   def quantity
     'no more'
