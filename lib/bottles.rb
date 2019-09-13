@@ -1,5 +1,6 @@
 require_relative '../lib/bottle_number'
 require_relative '../lib/bottle_number_0'
+require_relative '../lib/bottle_number_1'
 # the subject of the 99 bottles song
 class Bottles
   def verse(number)
@@ -20,8 +21,11 @@ class Bottles
   end
 
   def bottle_number_for(number)
-    if number == 0
+    case number
+    when 0
       BottleNumber0
+    when 1
+      BottleNumber1
     else
       BottleNumber
     end.new(number)
