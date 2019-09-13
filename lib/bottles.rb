@@ -1,5 +1,5 @@
 require_relative '../lib/bottle_number'
-
+# the subject of the 99 bottles song
 class Bottles
   def verse(number)
     bottle_number = BottleNumber.new(number)
