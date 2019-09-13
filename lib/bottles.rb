@@ -2,8 +2,8 @@ require_relative '../lib/bottle_number'
 # the subject of the 99 bottles song
 class Bottles
   def verse(number)
-    bottle_number = BottleNumber.new(number)
-    next_bottle_number = BottleNumber.new(bottle_number.successor)
+    bottle_number = bottle_number_for(number)
+    next_bottle_number = bottle_number_for(bottle_number.successor)
     "#{bottle_number} of beer on the wall, ".capitalize +
       "#{bottle_number} of beer.\n" \
       "#{bottle_number.action}, " \
@@ -16,5 +16,9 @@ class Bottles
 
   def song
     verses(99, 0)
+  end
+
+  def bottle_number_for(number)
+    BottleNumber.new(number)
   end
 end
