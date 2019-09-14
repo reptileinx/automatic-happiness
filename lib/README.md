@@ -134,3 +134,28 @@ lib/bottles.rb -- 5 warnings:
   [3]:UtilityFunction: Bottles#verse doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
 
 ```
+
+commit ff09253486cd064c6a6e46ae367b0dd1b0b9bd28
+
+Apart from factory code is open for change
+## Flog
+```
+⇒  flog lib/bottles.rb
+    16.4: flog total
+     4.1: flog/method average
+
+     6.2: Bottles#verse                    lib/bottles.rb:7-12
+     5.5: Bottles#verses                   lib/bottles.rb:15-16
+```
+
+## Reek
+```
+⇒  reek lib/bottles.rb
+Inspecting 1 file(s):
+S
+
+lib/bottles.rb -- 2 warnings:
+  [16]:UncommunicativeVariableName: Bottles#verses has the variable name 'i' [https://github.com/troessner/reek/blob/v5.2.0/docs/Uncommunicative-Variable-Name.md]
+  [7]:UtilityFunction: Bottles#verse doesn't depend on instance state (maybe move it to another class?) [https://github.com/troessner/reek/blob/v5.2.0/docs/Utility-Function.md]
+
+```
