@@ -10,6 +10,7 @@ class BottleNumber
       BottleNumber
     end.new(number)
   end
+
   attr_reader :number
 
   def initialize(number)
