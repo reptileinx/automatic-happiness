@@ -1,5 +1,15 @@
 # Curing Primitive Obssession by extracting bottle number
 class BottleNumber
+  def self.for(number)
+    case number
+    when 0
+      BottleNumber0
+    when 1
+      BottleNumber1
+    else
+      BottleNumber
+    end.new(number)
+  end
   attr_reader :number
 
   def initialize(number)
