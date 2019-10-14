@@ -1,5 +1,9 @@
 gem 'minitest', '~> 5.4'
 require 'minitest/autorun'
+require 'minitest/reporters'
+
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 require_relative '../lib/bottles'
 
 class BottlesTest < Minitest::Test
