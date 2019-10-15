@@ -15,6 +15,7 @@ jobs:
         ruby-version: 2.6.x
     - name: Build and test with Rake
       run: |
+        bundle update --bundler
         bundle install
         cd test
         ruby bottles_test.rb
